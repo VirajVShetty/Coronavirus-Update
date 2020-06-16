@@ -4,13 +4,14 @@
 import smtplib
 
 sender = 'corona.updates.av.2020@gmail.com'
-receivers = ['123akshaysonawane@gmail.com']
+receivers = ['akshaysonawane10526@gmail.com', 'virajshetty1@hotmail.com']
 pwd = 'sakecboys-akvi'
+
 
 message = """From: From Your Daily Coronavirus Updater <from@fromdomain.com>
 Subject: Coronavirus Cases Update
 
-<h1>Current Active Cases<h1>        
+Current Active Cases     
     India :- {}             
     Maharasgtra :- {}       
     Mumbai :- {}   
@@ -22,7 +23,7 @@ People Recovered:
 
 Total Recovery Percentage: {}%
 
-""".format("6969","654","63738","6969","654","63738", "99")
+""".format("6969","654","Will update soon","6969","654","63738", "Will update soon")
 
 if __name__ == "__main__":
     try:
