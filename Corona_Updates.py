@@ -5,12 +5,12 @@
     Akshay Sonawane
     
 """
+import urllib
+import urllib.request, urllib.parse
+from bs4 import BeautifulSoup
+import ssl
+import re
 def update():
-    import urllib
-    import urllib.request, urllib.parse
-    from bs4 import BeautifulSoup
-    import ssl
-    import re
 
     ctx = ssl.create_default_context()
     ctx.check_hostname = False
@@ -44,7 +44,7 @@ def update():
     print("Deaths: "+stat[2])
     print("Migrated: "+stat[3])
     """
-    i_p = (int(stat[1])*100/int(int(stat[0])+int(stat[1]))))
+    i_p = (int(stat[1])*100/int(int(stat[0])+int(stat[1])))
 
     state = []
     x = soup.select('.table > tbody:nth-child(2) > tr:nth-child(20) > td:nth-child(3)')
@@ -68,5 +68,7 @@ def update():
     print("Deaths: "+str(state[2]))
     print("Total: "+str(state[3]))
     """
-    m_p = (int(state[1])*100/int(state[3])))
-    return stat[0],stat[1],stat[2],stat[3],i_p,state[0],state[1],state[2],state[3],m_p
+    m_p = (int(state[1])*100/int(state[3]))
+    return (stat[0],stat[1],stat[2],stat[3],i_p,state[0],state[1],state[2],state[3],m_p)
+
+update()
