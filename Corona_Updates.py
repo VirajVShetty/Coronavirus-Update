@@ -41,6 +41,7 @@ print("Active: "+stat[0])
 print("Cured: "+stat[1])
 print("Deaths: "+stat[2])
 print("Migrated: "+stat[3])
+print("Recovery Percentage: %2f"%(int(stat[1])*100/int(int(stat[0])+int(stat[1]))))
 print("---------------------")
 
 state = []
@@ -63,3 +64,4 @@ print("Active: "+str(state[0]))
 print("Cured: "+str(state[1]))
 print("Deaths: "+str(state[2]))
 print("Total: "+str(state[3]))
+print("Recovery Percentage: %2f"%(int(state[1])*100/int(state[3])))
