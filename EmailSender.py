@@ -4,7 +4,7 @@
 import smtplib
 
 sender = 'corona.updates.av.2020@gmail.com'
-receivers = ['akshay.sonawane@sakec.ac.in']
+receivers = ['akshaysonawane10526@gmail.com', 'virajshetty1@hotmail.com', 'akshay.sonawane@sakec.ac.in']
 pwd = 'sakecboys-akvi'
 
 message = """From: From Your Daily Coronavirus Updater <from@fromdomain.com>
@@ -20,6 +20,6 @@ if __name__ == "__main__":
         smtpObj.login(sender, pwd)
         smtpObj.sendmail(sender, receivers, message)
         print("Successfully sent email")
+        smtpObj.quit()
     except smtplib.SMTPException:
-        print
-        "Error: unable to send email"
+        print("Error: unable to send email")
