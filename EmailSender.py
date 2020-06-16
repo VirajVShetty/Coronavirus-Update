@@ -13,8 +13,7 @@ if __name__ == "__main__":
 
     india_list, india_percent, maha_list, maha_percent = update()
 
-    message = """\
-    From: From Person <from@fromdomain.com>
+    message = """From: From Person <from@fromdomain.com>
     To: To Person <to@todomain.com>
     Subject: Coronavirus Cases Update
 
